@@ -69,8 +69,8 @@ public class Main {
 
         // TODO: update database parameters
         dataSource.setDatabaseName("books");
-        dataSource.setUser("pawel");
-        dataSource.setPassword("pawel");
+        dataSource.setUser("stefan_g");
+        dataSource.setPassword("lenovoideapadS340");
 
         ui.println("Trying to connect...");
         dataSource.getConnection().close();
