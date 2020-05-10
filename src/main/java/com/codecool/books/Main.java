@@ -60,7 +60,7 @@ public class Main {
                 ui.println("Using JDBC");
                 DataSource dataSource = connect();
                 authorDao = new AuthorDaoJDBC(dataSource);
-                bookDao = new GenericDaoJDBC(dataSource);
+                bookDao = new GenericDaoJDBC(dataSource, authorDao);
                 break;
         }
     }

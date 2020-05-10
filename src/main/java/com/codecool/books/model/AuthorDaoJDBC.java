@@ -16,7 +16,7 @@ public class AuthorDaoJDBC implements Dao<Author> {
     @Override
     public void add(Author author) {
         String query;
-        query = String.format("INSERT INTO author (first_name, last_name, birth_date) VALUES ('%s', '%s', '%s'j);",
+        query = String.format("INSERT INTO author (first_name, last_name, birth_date) VALUES ('%s', '%s', '%s');",
                 author.getFirstName(), author.getLastName(), author.getBirthDate());
         try {
             Statement statement = dataSource.getConnection().createStatement();

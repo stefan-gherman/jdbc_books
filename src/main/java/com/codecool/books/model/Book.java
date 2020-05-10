@@ -19,9 +19,9 @@ public class Book {
 
     @Override
     public String toString() {
-        return "Book:" +
-                ", id=" + id +
-                ", title='" + title + '\'' +
+        return "Book" +
+                " id:" + id +
+                ", title:'" + title + '\'' +
                 ", author:" + author.getFirstName() + " " + author.getLastName();
     }
 }
