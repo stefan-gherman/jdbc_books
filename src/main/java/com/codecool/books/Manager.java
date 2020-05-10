@@ -2,7 +2,7 @@ package com.codecool.books;
 
 import com.codecool.books.view.UserInterface;
 
-public abstract class Manager {
+public abstract class Manager{
     protected UserInterface ui;
 
     public Manager(UserInterface ui) {
@@ -36,8 +36,8 @@ public abstract class Manager {
         }
     }
 
-    protected abstract String getName();
-    protected abstract void list();
-    protected abstract void add();
-    protected abstract void edit();
+    protected abstract  String getName();
+    protected abstract  void  list();
+    protected abstract  void add();
+    protected abstract  void edit();
 }
