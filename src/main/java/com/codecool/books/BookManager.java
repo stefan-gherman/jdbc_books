@@ -1,5 +1,6 @@
 package com.codecool.books;
 
+import com.codecool.books.model.Author;
 import com.codecool.books.model.AuthorDao;
 import com.codecool.books.model.Book;
 import com.codecool.books.model.Dao;
@@ -10,9 +11,9 @@ import java.sql.Date;
 public class BookManager extends Manager{
 
     Dao<Book> genericDao;
-    AuthorDao authorDao;
+    Dao<Author> authorDao;
 
-    public BookManager(UserInterface ui, Dao<Book> genericDao, AuthorDao authorDao) {
+    public BookManager(UserInterface ui, Dao<Book> genericDao, Dao<Author> authorDao) {
         super(ui);
         this.genericDao = genericDao;
         this.authorDao = authorDao;

@@ -15,8 +15,8 @@ public class Main {
     }
 
     UserInterface ui;
-    AuthorDao authorDao;
-    GenericDaoInMemory bookDao;
+    Dao<Author> authorDao;
+    Dao<Book> bookDao;
 
     Main(UserInterface ui) {
         this.ui = ui;
@@ -60,6 +60,7 @@ public class Main {
                 ui.println("Using JDBC");
                 DataSource dataSource = connect();
                 authorDao = new AuthorDaoJDBC(dataSource);
+                bookDao = new GenericDaoJDBC(dataSource);
                 break;
         }
     }
